@@ -50,7 +50,7 @@ export default function SpecialJune() {
             <div className="flex justify-center">
               <div className="relative w-48 h-72 sm:w-56 sm:h-84 lg:w-64 lg:h-96 overflow-hidden rounded-xl">
                 <Image
-                  src="/movie-poster.jpg"
+                  src="/(Siko siko) first movie to watch together_.jpg"
                   alt="Movie poster - Siko siko"
                   fill
                   className="object-cover rounded-xl"
@@ -84,7 +84,7 @@ export default function SpecialJune() {
             <div className="flex justify-center">
               <div className="relative w-64 h-48 sm:w-72 sm:h-54 lg:w-80 lg:h-60 overflow-hidden rounded-xl">
                 <Image
-                  src="/marriage-certificate.jpg"
+                  src="/Virtual marriage certificate_.jpg"
                   alt="Virtual marriage certificate"
                   fill
                   className="object-cover rounded-xl"
