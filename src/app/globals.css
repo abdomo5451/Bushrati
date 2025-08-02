@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables */
+:root {
+  --dark: #0a0a0a;
+  --dark-gray: #1a1a1a;
+  --light-gray: #2a2a2a;
+  --soft-white: #f8f9fa;
+  --vibrant-pink: #ec4899;
+  --electric-purple: #8b5cf6;
+  --neon-blue: #06b6d4;
+  --sunset-orange: #f97316;
+  --emerald-green: #10b981;
+  --golden-yellow: #f59e0b;
+  --deep-violet: #7c3aed;
+  --coral-red: #ef4444;
+  --azure-blue: #3b82f6;
+  --magenta: #d946ef;
+}
+
+/* Global Styles */
+* {
+  background-color: transparent;
+}
+
+html {
+  background: linear-gradient(135deg, #0a0a0a 0%, #0f0f0f 50%, #1a1a1a 100%) !important;
+  background-attachment: fixed !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a 0%, #0f0f0f 50%, #1a1a1a 100%) !important;
+  background-attachment: fixed !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
+  color: var(--soft-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark text-soft-white font-sans;
+    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 50%, #2A2A2A 100%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-rose-gold to-dusty-rose bg-clip-text text-transparent;
+  }
+  
+  .gradient-text-vibrant {
+    @apply bg-gradient-to-r from-vibrant-pink via-electric-purple to-neon-blue bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease-in-out infinite;
+  }
+  
+  .gradient-text-sunset {
+    @apply bg-gradient-to-r from-sunset-orange via-vibrant-pink to-electric-purple bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease-in-out infinite;
+  }
+  
+  .gradient-text-aurora {
+    @apply bg-gradient-to-r from-emerald-green via-neon-blue to-electric-purple bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease-in-out infinite;
+  }
+  
+  .card-shadow {
+    box-shadow: 0 10px 25px rgba(183, 110, 121, 0.2);
+  }
+  
+  .card-shadow-vibrant {
+    box-shadow: 0 10px 25px rgba(255, 20, 147, 0.3), 0 0 40px rgba(138, 43, 226, 0.2);
+  }
+  
+  .memory-card {
+    @apply bg-light-gray rounded-2xl p-6 border border-gray-700 transition-all duration-300;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #2A2A2A 0%, #3A3A3A 100%);
+  }
+  
+  .memory-card:hover {
+    @apply border-rose-gold;
+    box-shadow: 0 8px 30px rgba(183, 110, 121, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  .memory-card-vibrant {
+    @apply bg-gradient-to-br from-vibrant-pink/10 via-electric-purple/10 to-neon-blue/10 rounded-2xl p-6 border transition-all duration-300;
+    border: 1px solid rgba(255, 20, 147, 0.3);
+    box-shadow: 0 8px 32px rgba(255, 20, 147, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .memory-card-vibrant:hover {
+    border: 1px solid rgba(255, 20, 147, 0.6);
+    box-shadow: 0 12px 40px rgba(255, 20, 147, 0.4);
+    transform: translateY(-8px) scale(1.02);
+  }
+  
+  .floating-element {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(183, 110, 121, 0.4);
+  }
+  
+  .glow-effect:hover {
+    box-shadow: 0 0 30px rgba(183, 110, 121, 0.6);
+  }
+  
+  .glow-effect-vibrant {
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.4), 0 0 40px rgba(138, 43, 226, 0.2);
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+  
+  .glow-effect-vibrant:hover {
+    box-shadow: 0 0 30px rgba(255, 20, 147, 0.6), 0 0 60px rgba(138, 43, 226, 0.4);
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  .modal-backdrop {
+    backdrop-filter: blur(8px);
+    background-color: rgba(253, 248, 243, 0.9);
+  }
+  
+  .speech-bubble {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+  }
+  
+  .button-vibrant {
+    @apply bg-gradient-to-r from-vibrant-pink via-electric-purple to-neon-blue text-white px-8 py-4 rounded-full font-medium transition-all duration-300;
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+  }
+  
+  .button-vibrant:hover {
+    background-size: 200% 200%;
+    animation: gradientShift 1.5s ease-in-out infinite;
+    box-shadow: 0 8px 25px rgba(255, 20, 147, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  .button-sunset {
+    @apply bg-gradient-to-r from-sunset-orange via-vibrant-pink to-electric-purple text-white px-8 py-4 rounded-full font-medium transition-all duration-300;
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+  }
+  
+  .button-sunset:hover {
+    background-size: 200% 200%;
+    animation: gradientShift 2s ease-in-out infinite;
+    box-shadow: 0 8px 25px rgba(255, 69, 0, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  /* Section Backgrounds */
+  .section-bg-vibrant {
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(15, 15, 15, 0.95) 50%, rgba(26, 26, 26, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(236, 72, 153, 0.1);
+  }
+  
+  .section-bg-sunset {
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(15, 15, 15, 0.95) 50%, rgba(26, 26, 26, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(249, 115, 22, 0.1);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+  }
+  
+  .border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(135deg, #FF1493, #8A2BE2, #00BFFF) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-gradient-animate {
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease-in-out infinite;
+  }
+} 
