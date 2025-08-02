@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Bushrati's Birthday",
+  title: "Bushrati&apos;s Birthday",
   description: 'A special birthday celebration for Bushrati',
   icons: {
     icon: [

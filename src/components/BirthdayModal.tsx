@@ -84,7 +84,7 @@ export default function BirthdayModal({ isOpen, onClose }: BirthdayModalProps) {
           <div className="text-soft-white leading-relaxed space-y-3">
             <p className="text-base">
               Today is the 3rd of August, the day in which you were born... 
-              for me, it's the second greatest day in history after the day I first talked to you.
+              for me, it&apos;s the second greatest day in history after the day I first talked to you.
             </p>
             <p className="font-medium text-lg" style={{ 
               background: 'linear-gradient(135deg, #FF4500, #FF1493, #8A2BE2)',

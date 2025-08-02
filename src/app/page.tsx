@@ -102,7 +102,7 @@ export default function Home() {
           {/* Loading text */}
           <div className="space-y-4">
             <h2 className="text-3xl font-serif font-bold bg-gradient-to-r from-vibrant-pink via-electric-purple to-neon-blue bg-clip-text text-transparent">
-              Loading Bushrati's Birthday
+              Loading Bushrati&apos;s Birthday
             </h2>
             <p className="text-soft-white text-lg opacity-80">
               Preparing something special...
