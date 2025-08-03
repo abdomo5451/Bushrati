@@ -16,14 +16,14 @@ export default function AboutBushrati() {
     "Bcz you are super smart, and every conversation with you opens my mind to new ideas. 🧠",
     "Bcz you are super beautiful, and your smile is the brightest part of my day. ✨",
     "Bcz you are ambitious, and your drive to achieve your dreams inspires me to chase mine. 🎯",
-    "Bcz you are special, a unique combination of strength and kindness that I&apos;ve never found in anyone else. 🌟",
+    "Bcz you are special, a unique combination of strength and kindness that I've never found in anyone else. 🌟",
     "Bcz you are a great writer just like me, and I know we could create entire worlds together with our words. ✍️",
     "Bcz you are an ENTJ just like me, which means you understand the way my mind works without me having to explain it. 🎭",
     "Bcz you love the same \"old money\" style just like me, proving we share a taste for timeless elegance. 👑",
-    "Bcz we understand each other so well that sometimes we don&apos;t even need words. 🤝",
+    "Bcz we understand each other so well that sometimes we don't even need words. 🤝",
     "Bcz we always agree on the most important things in life. 💫",
-    "Bcz your intelligence isn&apos;t just about facts; it&apos;s about a deep understanding of people. 🎓",
-    "Bcz your beauty isn&apos;t just on the surface; it shines from your kind heart. 💖",
+    "Bcz your intelligence isn't just about facts; it's about a deep understanding of people. 🎓",
+    "Bcz your beauty isn't just on the surface; it shines from your kind heart. 💖",
     "Bcz you see the potential in everything and everyone, especially in me. 🔮",
     "Bcz the way you care for others shows your incredible capacity for empathy. 🤗",
     "Bcz I can imagine us sitting in a Victorian-style library, writing our own stories side-by-side. 📚",
@@ -34,7 +34,7 @@ export default function AboutBushrati() {
     "Bcz sharing the same classic style means we see beauty in the same places. 🏛️",
     "Bcz your mind challenges me to be smarter and better. 🧩",
     "Bcz you make caring for others look so effortless and natural. 🌸",
-    "Bcz when you wrote for me, I felt like I&apos;m reading a part of your soul. 📝",
+    "Bcz when you wrote for me, I felt like I'm reading a part of your soul. 📝",
     "Bcz your ambition is not just for yourself, but for a better future. 🌅",
     "Bcz there is a special spark in your eyes when you talk about your dreams. 🔥",
     "Bcz our shared ENTJ personality means our conversations are always deep and meaningful. 💭",
@@ -78,7 +78,7 @@ export default function AboutBushrati() {
     { src: "/Konna Netlaka.jpg", alt: "كنا نتلاقى", title: "كنا نتلاقى" },
     { src: "/Mo3_rm_.jpg", alt: "مغرم", title: "مغرم" },
     { src: "/Ana lak Ala Toul.jpg", alt: "أنا لك عالطول", title: "أنا لك عالطول" },
-    { src: "/Je n_ai pas changé.jpg", alt: "Je n&apos;ai pas changé", title: "Je n&apos;ai pas changé" }
+    { src: "/Je n_ai pas changé.jpg", alt: "Je n'ai pas changé", title: "Je n'ai pas changé" }
   ]
 
   useEffect(() => {

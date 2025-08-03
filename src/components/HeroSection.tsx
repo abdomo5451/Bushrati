@@ -59,7 +59,6 @@ export default function HeroSection({ onButtonClick }: HeroSectionProps) {
           onClick={onButtonClick}
           className="button-vibrant inline-flex items-center gap-2 text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4"
         >
-          <Play className="w-4 h-4 sm:w-5 sm:h-5" />
           Click Me
         </motion.button>
       </div>

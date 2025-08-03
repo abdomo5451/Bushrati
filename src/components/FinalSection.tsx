@@ -36,7 +36,7 @@ export default function FinalSection() {
             
             <div className="bg-gradient-to-br from-vibrant-pink/20 via-electric-purple/20 to-neon-blue/20 border border-vibrant-pink/30 rounded-2xl p-6 text-left backdrop-blur-sm">
               <p className="text-soft-white leading-relaxed text-lg">
-                This website is just a small digital copy of a much bigger world you&apos;ve built inside my heart. 
+                This website is just a small digital copy of a much bigger world you've built inside my heart. 
                 Every day with you is a new, beautiful story. 
               </p>
               <p className="text-soft-white leading-relaxed text-lg mt-4 font-medium gradient-text-vibrant">
