@@ -1,6 +1,6 @@
 # Bushrati: A Living Story
 
-This project is a personal and living digital space dedicated to my best friend, Bushra, celebrating our journey, shared memories, and future dreams.
+This project is a personal and living digital space dedicated to my girlfriend, Bushra, celebrating our journey, shared memories, and future dreams.
 
 ---
 
